@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2d3d;
+}
+
+body {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.list__container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 640px;
+  height: 500px;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.header {
+  position: fixed;
+  padding: 30px 60px;
+  width: 100%;
+  max-width: 640px;
+  height: 160px;
+  background-color: #ffffff;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__input {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+}
+
+.header__button {
+  width: 18%;
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: #ff4438;
+  color: #ffffff;
+  transition: transform 300ms ease-in;
+}
+
+.header__button:hover {
+  transform: scale(0.98) translateY(1px);
+  background-color: #ff3022;
+}
+
+.list {
+  padding: 0 60px;
+  margin-top: 160px;
+}
+
+.todo {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo__name {
+  font-weight: 600;
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.todo__delete {
+  font-size: 16px;
+  transition: transform 300ms ease-in;
+}
+
+.todo__delete:hover {
+  color: #ff4438;
+  transform: scale(1.1);
+}
+
+.todo__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+@media screen and (max-width: 680px) {
+  .list__container {
+    height: 100%;
+  }
+}
